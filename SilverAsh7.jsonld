@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "SilverAsh7"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep because I believe in the mission of Cardano and I want to be an active stakeholder in that mission. I have been invested in Cardano and the community for 4 years now and consider it the future."
+    },
+    "objectives": {
+      "@value": "I aim to ensure that Cardano will grow as a blockchain, an ecosystem, and a community while remaining true to its mission and ideals. I, and Cardano, believe in trust, transparency, security, decentralization, efficiency, and liberty. I will work to ensure that these sometime conflicting values remain intact."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8j2057wsamm9sttm8ausd6z24casrku95yjzr2lwwvsxs258cx2x8cmxucjgkl4pt8wvgxulcyy4gvhtyu885n0w7qsg5f6ff"
+    },
+    "qualifications": {
+      "@value": "I studied Accounting, Economics, Finance, Mathematics, and Humanities in university and am a conscientious decisionmaker with ambitious goals."
+    },
+    "references": [
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/XxSilverAsh7xX"
+        }
+      }
+    ]
+  }
+}
